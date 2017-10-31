@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "dla", "dla.pyproj", "{0AEF4234-9139-467B-810F-1FFC58991168}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AEF4234-9139-467B-810F-1FFC58991168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEF4234-9139-467B-810F-1FFC58991168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEF4234-9139-467B-810F-1FFC58991168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEF4234-9139-467B-810F-1FFC58991168}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A13DFD4E-3567-4C47-B38E-A9DE7971CF25}
+	EndGlobalSection
+EndGlobal

@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,36 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>{% block title %}{{ request.project_name }}{% endblock %}</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+     {% comment %} {% include 'head_css.html' %} {% endcomment %}
+
+    <style>
+    {% block styles %}
+    {% endblock %}
+    </style>
+
+
+    
   </head>
   <body>
     {% if messages %}
-        <div class="alert alert-warning">
-        {% for message in messages %}
-              {{ message }}<br/>
-              {% endfor %}
-        </div>
-       
+            
+            <div class='alert alert-warning'>
+                <div class='container'>
+                 {% for message in messages %}
+                    {{ message }}<br/>
+                    {% endfor %}
+                </div>
+            </div>
+        
     {% endif %}
-    {% block content %}  
+    {% block content %}
     {% endblock %}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+
+    <hr style='margin-top: 150px;'>
+
+
+
+     <div class='container text-center' >
+      <footer>
+        <p>&copy; 2017 {{ request.project_name }}</p>
+      </footer>
+    </div> 
+{% comment %} 
+    {% include 'js.html' %} {% endcomment %}
+
+
+  
+    <script>
+     $(document).ready(function(){
+        var $marketingModal = $("#signUpModal");
+        var didDismissModal = false;
+        var doShowMarketing = false;
+        doShowMarketing = $(".leave-capture").attr('show') == 'true';
+        console.log(doShowMarketing)
+        $("body").mouseleave(function(){
+            if (!didDismissModal && doShowMarketing){
+                $marketingModal.modal()
+            }
+            
+        })
+        $marketingModal.on("hidden.bs.modal", function(e){
+            didDismissModal = true;
+        })
+        $(".join-form").submit(function(e){
+            e.preventDefault()
+            var this_ = $(this)
+            var joinEmailAPIEndpoint = "{% url 'email-join' %}";
+            $.ajax({
+                method: "POST",
+                data: this_.serialize(),
+                url: joinEmailAPIEndpoint,
+                success: function(data){
+                    didDismissModal = true;
+                    $marketingModal.modal('hide')
+                    this_.parent().html("<p class='lead'>Success! Thanks for joining</p>")
+                }, 
+                error: function(data){
+                    this_.find(".join-form-alert").fadeIn();
+                    this_.find('.join-form-error').text(data.responseJSON.email[0])
+                }
+                })
+        })
+    })
+    </script>
+    <script>
+    $(document).ready(function(){
+       {% block jquery %}{% endblock %} 
+    })
+    </script>
+{% comment %} 
+    {% include 'newsletter/snippets/modal.html' %} {% endcomment %}
   </body>
 </html>

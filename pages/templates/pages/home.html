@@ -21,23 +21,29 @@
 {% endblock %}
 </style>
 
+<script>
+    {% block jquery %}
+       
+    {% endblock %}
+</script>
+
 
 {% block content %}
 
-{% comment %} {% if object.show_nav %}
+{% if object.show_nav %}
     {% include 'navbar.html' %}
 {% endif %}
     {% if object.layout == 'stacked' %}
         {% include 'pages/snippet/stacked-layout.html' with page_obj=object form=form %}
 
     {% else %}
-        {% include 'pages/snippet/standard-layout.html' with page_obj=object form=form %}
+        {% include 'pages/snippet/standart-layout.html' with page_obj=object form=form %}
 
 
       {% endif %}
    
 {% if object.leave_capture %}
 <span class='leave-capture' show='true'></span>
-{% endif %} {% endcomment %}
+{% endif %} 
 
 {% endblock content %}

@@ -7,18 +7,26 @@
         "title_description": "Welcome, to my page",
         "title_btn": "Join",
         "title_btn_url": null,
-        "content": "<div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n       </div>\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n        </div>\r\n      </div>"
+        "content": "<div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n       </div>\r\n        <div class=\"col-md-4\">\r\n          <h2>Heading</h2>\r\n          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>\r\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\r\n        </div>\r\n      </div>",
+        "show_nav": true,
+        "nav_color": "#000000",
+        "layout": "standart",
+        "video_embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hb0sEZ0kZyM\" frameborder=\"0\" allowfullscreen></iframe>"
     }
 },
 {
     "model": "pages.page",
     "pk": 2,
     "fields": {
-        "title": "Page 2",
-        "title_description": "Page 2",
+        "title": "Second Page",
+        "title_description": "Its a second page",
         "title_btn": "Join",
         "title_btn_url": null,
-        "content": "Page 2 content"
+        "content": "Page 2 content",
+        "show_nav": true,
+        "nav_color": "#000000",
+        "layout": "standart",
+        "video_embed": ""
     }
 }
 ]

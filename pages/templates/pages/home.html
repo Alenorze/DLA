@@ -1,52 +1,43 @@
 {% extends "base.html" %}
 
+<style>
+{% block styles %}
+    {% if object.nav_color != '#000000' %}
+    .navbar-inverse {
+        background-color: {{ object.nav_color }};
+        border-color:{{ object.nav_color }}
+    }
+    {% endif %}
+    {% if not object.show_nav %}
+        body {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+    {% endif %}
+    .jumbotron {
+          background-color: {{ object.jumbotron_bg_color }} !important;
+          color: {{ object.jumbotron_text_color }} !important;
+        }
+{% endblock %}
+</style>
+
+
 {% block content %}
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-      </div>
-    </div>
-  </nav>
+{% comment %} {% if object.show_nav %}
+    {% include 'navbar.html' %}
+{% endif %}
+    {% if object.layout == 'stacked' %}
+        {% include 'pages/snippet/stacked-layout.html' with page_obj=object form=form %}
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
-      <h1>{{ page_obj.title }}</h1>
-      <p>{{ page_obj.title_description|linebreaks }}</p>
-      {% if title_btn_url %}
-      <p><a class="btn btn-primary btn-lg" href="{{ title_btn_url }}" role="button">{{ title_btn}}</a></p>
+    {% else %}
+        {% include 'pages/snippet/standard-layout.html' with page_obj=object form=form %}
+
+
       {% endif %}
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-xs-6">
-            <h2>Join us</h2>
-            <p>
-              {% include 'pages/snippet/join-form.html' with form=form %}
-            </p>
-          </div>
-    </div>
-    <div class="container">
-      {{ page_obj.content|safe }}
-    </div>
-
-    <hr>
-
-    <footer>
-      <p>&copy; 2016 Company, Inc.</p>
-    </footer>
-  </div>
+   
+{% if object.leave_capture %}
+<span class='leave-capture' show='true'></span>
+{% endif %} {% endcomment %}
 
 {% endblock content %}

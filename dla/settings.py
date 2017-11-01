@@ -33,7 +33,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages',
-    'newsletter', 
+    'newsletter',
+    'rest_framework',
 
     'django.contrib.admin',
     'django.contrib.auth',

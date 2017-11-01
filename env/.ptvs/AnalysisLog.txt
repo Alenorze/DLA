@@ -11294,3 +11294,109 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\Ext
 2017-10-30T19:44:52: Deleting 2 files
 2017-10-30T19:44:52: Deleting "X:\Projects\Django-Landing\DjLa\dla\env\.ptvs\_dummy_threading.idb"
 2017-10-30T19:44:52: Deleting "X:\Projects\Django-Landing\DjLa\dla\env\.ptvs\_dummy__threading_local.idb"
+
+2017-11-01T22:26:36: Start analysis
+2017-11-01T22:26:38: IncludeModulesFromModulePath = win32com
+2017-11-01T22:27:19: Including x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework because rest_framework.apps needs updating
+2017-11-01T22:27:19: Deleting 0 files
+2017-11-01T22:27:19: astropy.CallDepth = 0
+2017-11-01T22:27:19: delphixpy.CallDepth = 0
+2017-11-01T22:27:19: matplotlib.CallDepth = 3
+2017-11-01T22:27:19: pandas.CallDepth = 0
+2017-11-01T22:27:19: sympy.CallDepth = 0
+2017-11-01T22:27:19: Start group "x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework" with 65 files
+2017-11-01T22:27:21: Parsing complete
+2017-11-01T22:27:21: Analyzing "rest_framework.apps" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\apps.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authentication" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authentication.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.checks" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\checks.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.compat" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\compat.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.decorators" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\decorators.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.documentation" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\documentation.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.exceptions" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\exceptions.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.fields" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\fields.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.filters" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\filters.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.generics" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\generics.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.metadata" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\metadata.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.mixins" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\mixins.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.models" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\models.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.negotiation" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\negotiation.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.pagination" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\pagination.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.parsers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\parsers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.permissions" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\permissions.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.relations" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\relations.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.renderers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\renderers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.request" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\request.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.response" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\response.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.reverse" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\reverse.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.routers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\routers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.serializers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\serializers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.settings" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\settings.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.status" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\status.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.test" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\test.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.throttling" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\throttling.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.urlpatterns" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\urlpatterns.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.urls" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\urls.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.validators" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\validators.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.versioning" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\versioning.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.views" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\views.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.viewsets" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\viewsets.py")
+2017-11-01T22:27:21: Analyzing "rest_framework" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.admin" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\admin.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.apps" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\apps.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.models" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\models.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.serializers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\serializers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.views" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\views.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.management" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\management\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.management.commands.drf_create_token" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\management\commands\drf_create_token.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.management.commands" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\management\commands\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.authtoken.migrations" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\authtoken\migrations\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.schemas.generators" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\schemas\generators.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.schemas.inspectors" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\schemas\inspectors.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.schemas.utils" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\schemas\utils.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.schemas.views" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\schemas\views.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.schemas" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\schemas\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.templatetags.rest_framework" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\templatetags\rest_framework.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.templatetags" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\templatetags\__init__.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.breadcrumbs" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\breadcrumbs.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.encoders" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\encoders.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.field_mapping" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\field_mapping.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.formatting" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\formatting.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.html" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\html.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.humanize_datetime" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\humanize_datetime.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.json" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\json.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.mediatypes" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\mediatypes.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.model_meta" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\model_meta.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.representation" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\representation.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.serializer_helpers" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\serializer_helpers.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils.urls" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\urls.py")
+2017-11-01T22:27:21: Analyzing "rest_framework.utils" ("x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework\utils\__init__.py")
+2017-11-01T22:27:21: Starting analysis of 65 modules
+2017-11-01T22:28:20: Analysis complete
+2017-11-01T22:28:20: Saving group "x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework"
+2017-11-01T22:28:25: [ERROR] rest_framework.utils.formatting.dedent: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.fields.Field.Field: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.fields.Field.Field: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.test.APIRequestFactory.APIRequestFactory: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.test.APIRequestFactory.APIRequestFactory: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.test.APIRequestFactory.APIRequestFactory: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.test.APIRequestFactory.APIRequestFactory: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.test.APIRequestFactory.APIRequestFactory: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.parsers.FileUploadParser.FileUploadParser: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.parsers.DataAndFiles.DataAndFiles: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.parsers.DataAndFiles.DataAndFiles: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.utils.representation.smart_repr: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.authtoken.serializers.AuthTokenSerializer.AuthTokenSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.BaseSerializer.BaseSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.BaseSerializer.BaseSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.BaseSerializer.BaseSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.ListSerializer.ListSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.ListSerializer.ListSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.serializers.ListSerializer.ListSerializer: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.utils.field_mapping.needs_label: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.utils.field_mapping.get_field_kwargs: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.relations.RelatedField.RelatedField: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.relations.ManyRelatedField.ManyRelatedField: Unknown has no name
+2017-11-01T22:28:25: [ERROR] rest_framework.exceptions.Throttled.Throttled: Unknown has no name
+2017-11-01T22:28:25: End of group "x:\projects\django-landing\djla\dla\env\lib\site-packages\rest_framework"
+2017-11-01T22:28:28: Deleting 0 files

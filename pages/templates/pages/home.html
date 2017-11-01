@@ -14,50 +14,45 @@
         <a class="navbar-brand" href="#">Project name</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <!-- <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" placeholder="Email" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Password" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-success">Sign in</button>
-        </form> -->
-      </div><!--/.navbar-collapse -->
+      </div>
     </div>
   </nav>
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <h1>{{ page_obj.title }}</h1>
+      <p>{{ page_obj.title_description|linebreaks }}</p>
+      {% if title_btn_url %}
+      <p><a class="btn btn-primary btn-lg" href="{{ title_btn_url }}" role="button">{{ title_btn}}</a></p>
+      {% endif %}
     </div>
   </div>
 
   <div class="container">
-    <!-- Example row of columns -->
     <div class="row">
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-     </div>
-      <div class="col-md-4">
-        <h2>Example page</h2>
-        <p>
-            <form method="POST" action="">{% csrf_token %}
-          {{ form.as_p }}
-          <input type="submit" value="Join" class="btn btn-primary">
-        </form>
-        </p>
-      </div>
+        <div class="col-xs-6">
+            <h2>Join us</h2>
+            <p>
+                <form method="POST" action="">{% csrf_token %}
+              {% comment %} {{ form.as_p }} {% endcomment %}
+              <div class="col-lg-6">
+                  <div class="input-group">
+                      <input type="email" name='email' placeholder="Your Email" class="form-control">
+                    <span class="input-group-btn">
+                        <input type="submit" value="Join" class="btn btn-primary">
+                    </span>
+                    
+                  </div><!-- /input-group -->
+                </div>
+              
+              
+            </form>
+            </p>
+          </div>
+    </div>
+    <div class="container">
+      {{ page_obj.content|safe }}
     </div>
 
     <hr>

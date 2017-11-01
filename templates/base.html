@@ -24,13 +24,14 @@
   </head>
   <body>
     {% if messages %}
-      {% for message in messages %}
-        <div class="alert alert-warning">'
+        <div class="alert alert-warning">
+        {% for message in messages %}
               {{ message }}<br/>
+              {% endfor %}
         </div>
-      {% endfor %}
-    {% block content %}
-        
+       
+    {% endif %}
+    {% block content %}  
     {% endblock %}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -34,20 +34,7 @@
         <div class="col-xs-6">
             <h2>Join us</h2>
             <p>
-                <form method="POST" action="">{% csrf_token %}
-              {% comment %} {{ form.as_p }} {% endcomment %}
-              <div class="col-lg-6">
-                  <div class="input-group">
-                      <input type="email" name='email' placeholder="Your Email" class="form-control">
-                    <span class="input-group-btn">
-                        <input type="submit" value="Join" class="btn btn-primary">
-                    </span>
-                    
-                  </div><!-- /input-group -->
-                </div>
-              
-              
-            </form>
+              {% include 'pages/snippet/join-form.html' with form=form %}
             </p>
           </div>
     </div>

@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% block title %}{{ request.project_name }}{% endblock %}</title>
 
-    {% include 'head_css.html' %}
+     {% include 'head_css.html' %}
 
     <style>
     {% block styles %}
@@ -44,9 +44,9 @@
       <footer>
         <p>&copy; 2017 {{ request.project_name }}</p>
       </footer>
-    </div> 
+    </div> <!-- /container -->
 
-    {% include 'js.html' %} 
+    {% include 'js.html' %}
 
 
   
@@ -82,6 +82,8 @@
                 error: function(data){
                     this_.find(".join-form-alert").fadeIn();
                     this_.find('.join-form-error').text(data.responseJSON.email[0])
+                    // $(".join-form-alert").fadeIn();
+                    // $(".join-form-error").text(data.responseJSON.email[0])
                 }
                 })
         })

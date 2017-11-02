@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% block title %}{{ request.project_name }}{% endblock %}</title>
 
-     {% comment %} {% include 'head_css.html' %} {% endcomment %}
+    {% include 'head_css.html' %}
 
     <style>
     {% block styles %}
@@ -45,8 +45,8 @@
         <p>&copy; 2017 {{ request.project_name }}</p>
       </footer>
     </div> 
-{% comment %} 
-    {% include 'js.html' %} {% endcomment %}
+
+    {% include 'js.html' %} 
 
 
   

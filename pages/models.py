@@ -1,10 +1,13 @@
 from django.db import models
 from django.core.exceptions import ValidationError
+from django.db.models.signals import pre_save
 
 LAYOUT_CHOICES = (
     ('standart', 'Standart'),
     ('stacked', 'Stacked'),
 )
+
+from .utils import unique_slug_generator
 
 
 def layout_validator(value):
@@ -26,10 +29,10 @@ class Page(models.Model):
     nav_color         = models.CharField(max_length=7, default='#000000', validators=[])
     layout            = models.CharField(max_length=20, choices=LAYOUT_CHOICES, default='standart')
     video_embed       = models.TextField(null=True, blank=True)
-    slug              = models.SlugField(default='page-slug')
+    slug              = models.SlugField(default='page-slug', blank=True)
     featured          = models.BooleanField(default=False)
     active            = models.BooleanField(default=True)
-
+    leave_capture     = models.BooleanField(default=True)
 
     def save(self, *args, **kwargs):
         if self.featured:
@@ -40,3 +43,9 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+def pre_save_receiver_page_model(sender, instance, *args, **kwargs):
+    if instance.slug == 'page_slug' or instance.slug == '':
+        instance.slug = unique_slug_generator(instance)
+
+pre_save.connect(pre_save_receiver_page_model, sender=Page)
